@@ -25,9 +25,11 @@ export default class PropertyList extends React.Component {
 };
 
 PropertyList.PropTypes = {
-	properties: React.PropTypes.array
+	properties: React.PropTypes.array,
+	className: React.PropTypes.string
 }
 
 PropertyList.defaultProps = {
-	properties: []
+	properties: [],
+	className: ''
 }

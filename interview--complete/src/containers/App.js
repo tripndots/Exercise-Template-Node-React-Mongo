@@ -24,7 +24,6 @@ export default class App extends React.Component {
 	}
 
 	handleAdd(property) {
-		console.log(property)
 		axios.post('/api/properties', property)
 			.then(res => {
 				this.setState({ properties: res.data })
@@ -43,11 +42,3 @@ export default class App extends React.Component {
 		);
 	}
 };
-
-App.PropTypes = {
-
-}
-
-App.defaultProps = {
-
-}

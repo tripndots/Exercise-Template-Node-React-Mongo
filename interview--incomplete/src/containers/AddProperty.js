@@ -82,7 +82,7 @@ export default class AddProperty extends React.Component {
                         "WY - Wyoming"
                         ]
 		return(
-			<Form style={ this.props.style } heading="Add New Property">
+			<Form className={ this.props.className } style={ this.props.style } heading="Add New Property">
 				<Input onChange={ (name, value) => this.handleChange(name, value) } width="1" name="address" placeholder="Address" />
 				<Input onChange={ (name, value) => this.handleChange(name, value) } type="select" options={ stateOptions } 
 					   width=".5" name="state" placeholder="State" />

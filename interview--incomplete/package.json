@@ -1,5 +1,5 @@
 {
-  "name": "interview",
+  "name": "interview--incomplete",
   "version": "1.0.0",
   "description": "Interview Template to test MongoDB, NodeJS/Express, and ReactJS",
   "main": "index.js",
