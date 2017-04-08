@@ -32,3 +32,6 @@ There are only 2 files that need to be eddited for completion:
 
 The developer may need to navigate to the two other container:
 `AddProperty.js` and `PropertyList.js`, but do not need to be editted.
+
+The developer has access to bluebird, axios, and of course fetch.
+Note: If using bluebird, you must import it.
