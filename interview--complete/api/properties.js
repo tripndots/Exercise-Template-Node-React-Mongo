@@ -24,9 +24,10 @@ router.get('/', (req, res) => {
 // Post Request for adding a Property
 router.post('/', (req, res) => {
 	let newProperty = new Property(req.body)
-	newProperty.save();
-	Property.find({}, (err, users) => {
-		res.send(users);
+	newProperty.save().then(() => {
+		Property.find({}, (err, users) => {
+			res.send(users);
+		})
 	})
 })
 
