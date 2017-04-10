@@ -93,7 +93,7 @@ export default class AddProperty extends React.Component {
 	}
 };
 
-AddProperty.PropTypes = {
+AddProperty.propTypes = {
     handleAdd: React.PropTypes.func
 }
 
