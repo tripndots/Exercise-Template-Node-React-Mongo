@@ -27,6 +27,9 @@ webpack -w
 npm start
 ```
 
+## Database and Initial Data
+For your convenience, I have added initial data in the /api/properties.js. This was added so that the user knows when they have successfully connected to the database. If you accidently keep this up and you have too much data to test. Use `mongoose.connection.dropDatabase()` to drop the data.
+
 There are only 2 files that need to be eddited for completion:
 `src/container/App.js` and `api/properties.js`
 
@@ -34,4 +37,3 @@ The developer may need to navigate to the two other container:
 `AddProperty.js` and `PropertyList.js`, but do not need to be editted.
 
 The developer has access to bluebird, axios, and of course fetch.
-Note: If using bluebird, you must import it.
